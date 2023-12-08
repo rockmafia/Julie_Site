@@ -6,23 +6,26 @@ function App() {
       <section className="bg-Sepia dark:bg-gray-900">
         <div></div>
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-          <div className="mr-auto place-self-center lg:col-span-7">
-            <TypeAnimation
-              sequence={[
-                // Same substring at the start will only be typed once, initially
-                "We produce food for Mice",
-                1000,
-                "We produce food for Hamsters",
-                1000,
-                "We produce food for Guinea Pigs",
-                1000,
-                "We produce food for Chinchillas",
-                1000,
-              ]}
-              speed={50}
-              style={{ fontSize: "2em" }}
-              repeat={Infinity}
-            />
+          <div className="mr-auto place-self-center lg:col-span-7 ">
+            <div className=" text-xl font-bold pb-6 ">
+              <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed once, initially
+                  "We produce food for Mice",
+                  1000,
+                  "We produce food for Hamsters",
+                  1000,
+                  "We produce food for Guinea Pigs",
+                  1000,
+                  "We produce food for Chinchillas",
+                  1000,
+                ]}
+                speed={50}
+                style={{ fontSize: "2em" , color: "blue" }}
+                repeat={Infinity}
+              />
+            </div>
+
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
               Payments tool for software companies
             </h1>
@@ -65,7 +68,7 @@ function App() {
       </section>
 
       <section className="bg-Salmon dark:bg-gray-900">
-        <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-10 lg:py-16 lg:grid-cols-12">
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img
               src="https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -93,9 +96,9 @@ function App() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </a>
