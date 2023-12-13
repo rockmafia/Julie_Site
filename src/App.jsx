@@ -1,4 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
+import Deepti from './assets/DeeptiMisser.png'
 
 function App() {
   return (
@@ -7,6 +8,12 @@ function App() {
         <div></div>
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7 ">
+            
+
+            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+              Deepti Misser
+            </h1>
+
             <div className=" text-xl font-bold pb-6 ">
               <TypeAnimation
                 sequence={[
@@ -21,14 +28,10 @@ function App() {
                   1000,
                 ]}
                 speed={50}
-                style={{ fontSize: "2em" , color: "blue" }}
+                style={{ fontSize: "2em" , color: "#016A70" }}
                 repeat={Infinity}
               />
             </div>
-
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-              Payments tool for software companies
-            </h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               From checkout to global sales tax compliance, companies around the
               world use Flowbite to simplify their payment stack.
@@ -60,8 +63,9 @@ function App() {
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img
-              src="https://images.unsplash.com/photo-1552858725-2758b5fb1286?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src={Deepti}
               alt="mockup"
+              className="rounded-lg h-4/5  "
             />
           </div>
         </div>
@@ -73,6 +77,7 @@ function App() {
             <img
               src="https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="mockup"
+              
             />
           </div>
 
