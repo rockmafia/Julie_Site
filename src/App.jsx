@@ -1,9 +1,18 @@
 import { TypeAnimation } from "react-type-animation";
 import Deepti from "./assets/DeeptiMisser.png";
+import { motion , useScroll } from "framer-motion";
+import  './index.css'
 
 function App() {
+
+  const { scrollYProgress } = useScroll();
+
   return (
     <>
+    <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
       <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 z-10">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
