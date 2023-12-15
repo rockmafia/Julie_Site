@@ -556,14 +556,19 @@ function App() {
                     <p className="text-neutral-500 dark:text-neutral-200">
                       +1 234-567-89
                     </p>
+                   
+                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
         {/* <Slide/> */}
       </section>
+
+     
     </>
   );
 }
