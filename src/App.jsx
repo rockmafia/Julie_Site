@@ -105,9 +105,12 @@ function App() {
         {/* <Slide/> */}
         <div className="grid max-w-screen-xl px-4 py-4 mx-auto lg:gap-8 xl:gap-0 lg:py-8 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7 ">
-            <h1 className="max-w-2xl mb-2 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-7xl dark:text-white pb-8">
+            <motion.div animate={{ x: 50 , scale: 1.2 }}
+              transition={{ delay: 1 }}>
+            <h1 className="max-w-2xl mb-2 text-4xl  tracking-tight leading-none md:text-5xl xl:text-7xl dark:text-white pb-8  font-bold ">
               Deepti Misser
             </h1>
+            </motion.div>
 
             <div className=" text-xl font-bold pb-6 ">
               {/* <TypeAnimation
