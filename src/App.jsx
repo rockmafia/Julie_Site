@@ -1,4 +1,4 @@
-import {useRef} from 'react';
+import { useRef } from "react";
 import Deepti from "./assets/DeeptiMisser.png";
 import { motion, useScroll } from "framer-motion";
 import "./index.css";
@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <motion.div
-        className="progress-bar"
+        className="progress-bar z-10"
         style={{ scaleX: scrollYProgress }}
       />
       <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 z-10">
@@ -28,11 +28,6 @@ function App() {
             href="#"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8"
-              alt="Flowbite Logo"
-            />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Julie Site
             </span>
@@ -84,7 +79,8 @@ function App() {
                 </a>
               </li>
               <li>
-                <a onClick={handleClickcaboutme}
+                <a
+                  onClick={handleClickcaboutme}
                   href="#"
                   className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
@@ -92,7 +88,8 @@ function App() {
                 </a>
               </li>
               <li>
-                <a onClick={handleClick}
+                <a
+                  onClick={handleClick}
                   href="#"
                   className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
@@ -105,6 +102,7 @@ function App() {
       </nav>
 
       <section className="bg-Sepia dark:bg-gray-900">
+        {/* <Slide/> */}
         <div className="grid max-w-screen-xl px-4 py-4 mx-auto lg:gap-8 xl:gap-0 lg:py-8 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7 ">
             <h1 className="max-w-2xl mb-2 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-7xl dark:text-white pb-8">
@@ -162,7 +160,7 @@ function App() {
       <section className="bg-Salmon dark:bg-gray-900" ref={refabout}>
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-10 lg:py-16 lg:grid-cols-12">
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <motion.div animate={{ y: 10 }} transition={{ delay: 1 }}>
+            <motion.div animate={{ x: -90, delay: 0.2  ,ease: "linear",  }} transition={{ delay: 2 }}>
               <img
                 src="https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="mockup"
@@ -170,7 +168,7 @@ function App() {
             </motion.div>
           </div>
 
-          <div className="mr-auto place-self-center lg:col-span-7" >
+          <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
               About Me
             </h1>
@@ -212,7 +210,7 @@ function App() {
             Skills
           </h2>
           <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
-            <a href="#" className="flex justify-center items-center">
+            <a className="flex justify-center items-center">
               <svg
                 className="h-9 hover:text-gray-900 dark:hover:text-white"
                 viewBox="0 0 125 35"
@@ -227,7 +225,7 @@ function App() {
                 />
               </svg>
             </a>
-            <a href="#" className="flex justify-center items-center">
+            <a className="flex justify-center items-center">
               <svg
                 className="h-9 hover:text-gray-900 dark:hover:text-white"
                 viewBox="0 0 86 29"
@@ -242,7 +240,7 @@ function App() {
                 />
               </svg>
             </a>
-            <a href="#" className="flex justify-center items-center">
+            <a  className="flex justify-center items-center">
               <svg
                 className="h-8 hover:text-gray-900 dark:hover:text-white"
                 viewBox="0 0 151 34"
@@ -268,7 +266,7 @@ function App() {
               </svg>
             </a>
 
-            <a href="#" className="flex justify-center items-center">
+            <a  className="flex justify-center items-center">
               <svg
                 className="h-9 hover:text-gray-900 dark:hover:text-white"
                 viewBox="0 0 124 38"
@@ -281,7 +279,7 @@ function App() {
                 />
               </svg>
             </a>
-            <a href="#" className="flex justify-center items-center">
+            <a className="flex justify-center items-center">
               <svg
                 className="h-9 hover:text-gray-900 dark:hover:text-white"
                 viewBox="0 0 137 37"
@@ -362,7 +360,7 @@ function App() {
                 />
               </svg>
             </a>
-            <a href="#" className="flex justify-center items-center">
+            <a  className="flex justify-center items-center">
               <svg
                 className="h-6 hover:text-gray-900 dark:hover:text-white"
                 viewBox="0 0 124 21"
@@ -423,9 +421,9 @@ function App() {
         </div>
       </section>
 
-      <section className=" bg-Sepia">
+      <section className=" bg-Sepia" ref={ref}>
         <div className="mb-8 lg:mb-4 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl pt-10">
-          <h1 ref={ref}>Contact Us</h1>
+          <h1>Contact Us</h1>
         </div>
         <div className="flex flex-wrap justify-center pt-10 ">
           <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 ">
@@ -561,6 +559,7 @@ function App() {
             </div>
           </div>
         </div>
+        {/* <Slide/> */}
       </section>
     </>
   );
