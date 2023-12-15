@@ -1,10 +1,20 @@
-import { TypeAnimation } from "react-type-animation";
+import {useRef} from 'react';
 import Deepti from "./assets/DeeptiMisser.png";
 import { motion, useScroll } from "framer-motion";
 import "./index.css";
 
+
 function App() {
   const { scrollYProgress } = useScroll();
+  const ref = useRef(null);
+  const refabout = useRef(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleClickcaboutme = () => {
+    refabout.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>
@@ -74,7 +84,7 @@ function App() {
                 </a>
               </li>
               <li>
-                <a
+                <a onClick={handleClickcaboutme}
                   href="#"
                   className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
@@ -82,7 +92,7 @@ function App() {
                 </a>
               </li>
               <li>
-                <a
+                <a onClick={handleClick}
                   href="#"
                   className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
@@ -138,14 +148,18 @@ function App() {
             </a>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <motion.div animate={{ x: 50 }} transition={{ delay: 1 }} className="h-4/5">
+            <motion.div
+              animate={{ x: 50 }}
+              transition={{ delay: 1 }}
+              className="h-4/5"
+            >
               <img src={Deepti} alt="mockup" className="rounded-lg  " />
             </motion.div>
           </div>
         </div>
       </section>
 
-      <section className="bg-Salmon dark:bg-gray-900">
+      <section className="bg-Salmon dark:bg-gray-900" ref={refabout}>
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-10 lg:py-16 lg:grid-cols-12">
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <motion.div animate={{ y: 10 }} transition={{ delay: 1 }}>
@@ -156,7 +170,7 @@ function App() {
             </motion.div>
           </div>
 
-          <div className="mr-auto place-self-center lg:col-span-7">
+          <div className="mr-auto place-self-center lg:col-span-7" >
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
               About Me
             </h1>
@@ -411,7 +425,7 @@ function App() {
 
       <section className=" bg-Sepia">
         <div className="mb-8 lg:mb-4 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl pt-10">
-          <h1>Contact Us</h1>
+          <h1 ref={ref}>Contact Us</h1>
         </div>
         <div className="flex flex-wrap justify-center pt-10 ">
           <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 ">
