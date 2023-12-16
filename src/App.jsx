@@ -3,7 +3,6 @@ import Deepti from "./assets/DeeptiMisser.png";
 import { motion, useScroll } from "framer-motion";
 import "./index.css";
 
-
 function App() {
   const { scrollYProgress } = useScroll();
   const ref = useRef(null);
@@ -105,11 +104,15 @@ function App() {
         {/* <Slide/> */}
         <div className="grid max-w-screen-xl px-4 py-4 mx-auto lg:gap-8 xl:gap-0 lg:py-8 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7 ">
-            <motion.div animate={{ x: 50 , scale: 1.2 }}
-              transition={{ delay: 1 }}>
-            <h1 className="max-w-2xl mb-2 text-4xl  tracking-tight leading-none md:text-5xl xl:text-7xl dark:text-white pb-8  font-bold ">
-              Deepti Misser
-            </h1>
+            <motion.div
+              animate={{ x: 50, scale: 1.2 }}
+              transition={{ delay: 1 }}
+            >
+              <h1 className="max-w-2xl mb-2 text-4xl  tracking-tight leading-none md:text-5xl xl:text-7xl dark:text-white pb-8  font-bold ">
+                Deepti Misser
+              </h1>
+
+              <h2 className="text-2xl">About me</h2>
             </motion.div>
 
             <div className=" text-xl font-bold pb-6 ">
@@ -131,14 +134,12 @@ function App() {
               /> */}
             </div>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-              I am highly driven and experienced a bachelor’s degree in
-              International Business Administration and a master’s degree in
-              General Management. I have substantial academic background and job
-              related to business, medicine, and marketing with a proven track
-              record of delivering results with an outstanding ability to make
-              clear and effective management with my team. I have been
-              passionate about digital marketing with eagerness to face
-              challenges and to learn new things.
+              I have substantial academic background and job related to
+              business, medicine, and marketing with a proven track record of
+              delivering results with an outstanding ability to make clear and
+              effective management with my team. I have been passionate about
+              digital marketing with eagerness to face challenges and to learn
+              new things.
             </p>
 
             <a
@@ -163,7 +164,10 @@ function App() {
       <section className="bg-Salmon dark:bg-gray-900" ref={refabout}>
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-10 lg:py-16 lg:grid-cols-12">
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <motion.div animate={{ x: -90, delay: 0.2  ,ease: "linear",  }} transition={{ delay: 2 }}>
+            <motion.div
+              animate={{ x: -90, delay: 0.2, ease: "linear" }}
+              transition={{ delay: 2 }}
+            >
               <img
                 src="https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="mockup"
@@ -175,34 +179,46 @@ function App() {
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
               About Me
             </h1>
-            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-              From checkout to global sales tax compliance, companies around the
-              world use Flowbite to simplify their payment stack.
-            </p>
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-            >
-              Get started
-              <svg
-                className="w-5 h-5 ml-2 -mr-1"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-            </a>
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-            >
-              Speak to Sales
-            </a>
+
+            <ol class="relative border-s border-gray-200 dark:border-gray-700">
+              <li class="mb-10 ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 text-yellow-400">
+                  December 2021
+                </time>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                  Stamford International University, Thailand
+                </h3>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                  Master of Business Administration in General Management.
+                </p>
+              </li>
+              <li class="mb-10 ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                September 2014
+                </time>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                International College, Suan Sunandha Rajabhat University,
+                  Thailand
+                </h3>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                Bachelor of Business Administration in International Business.
+                </p>
+              </li>
+              <li class="ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  2019-2021
+                </time>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                Upjohn (Thailand) Limited, Pfizer Division Thailand Viatris, 
+                </h3>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                Thailand Marketing and Sales Department.
+                </p>
+              </li>
+            </ol>    
           </div>
         </div>
       </section>
@@ -243,7 +259,7 @@ function App() {
                 />
               </svg>
             </a>
-            <a  className="flex justify-center items-center">
+            <a className="flex justify-center items-center">
               <svg
                 className="h-8 hover:text-gray-900 dark:hover:text-white"
                 viewBox="0 0 151 34"
@@ -269,7 +285,7 @@ function App() {
               </svg>
             </a>
 
-            <a  className="flex justify-center items-center">
+            <a className="flex justify-center items-center">
               <svg
                 className="h-9 hover:text-gray-900 dark:hover:text-white"
                 viewBox="0 0 124 38"
@@ -363,7 +379,7 @@ function App() {
                 />
               </svg>
             </a>
-            <a  className="flex justify-center items-center">
+            <a className="flex justify-center items-center">
               <svg
                 className="h-6 hover:text-gray-900 dark:hover:text-white"
                 viewBox="0 0 124 21"
@@ -556,19 +572,15 @@ function App() {
                     <p className="text-neutral-500 dark:text-neutral-200">
                       +1 234-567-89
                     </p>
-                   
-                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
+
         {/* <Slide/> */}
       </section>
-
-     
     </>
   );
 }
