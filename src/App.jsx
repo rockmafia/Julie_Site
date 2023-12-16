@@ -237,20 +237,15 @@ function App() {
               src={Present}
               alt="University Exeter"
             />
-
-           
           </div>
 
           <div className=" aspect-video ">
-              <iframe
-                className=" h-full w-full rounded-lg"
-                src="https://youtu.be/HW2FSh6rq4o"
-                width="100%"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
+            <iframe
+              width="420"
+              height="345"
+              src="https://youtu.be/HW2FSh6rq4o"
+            ></iframe>
+          </div>
         </div>
         /
       </section>
