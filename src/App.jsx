@@ -8,11 +8,15 @@ function App() {
   const { scrollYProgress } = useScroll();
   const ref = useRef(null);
   const refabout = useRef(null);
+  const refportfolio = useRef(null);
 
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
   const handleClickcaboutme = () => {
+    refabout.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleClickportfolio = () => {
     refabout.current?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -71,7 +75,7 @@ function App() {
                 </a>
               </li>
               <li>
-                <a
+                <a onClick={handleClickportfolio}
                   href="#"
                   className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
@@ -228,14 +232,15 @@ function App() {
 
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-          <h2 className="mb-8 lg:mb-16 font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white text-4xl uppercase">
+          <h2 className="mb-8 lg:mb-16 font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white text-4xl uppercase" >
             Portfolio
           </h2>
-          <div className="flex justify-center">
+          <div className="flex justify-center" >
             <img
               className="lg:w-auto lg:h-full h-48"
               src={Present}
               alt="University Exeter"
+              ref={handleClickportfolio}
             />
           </div>
 
