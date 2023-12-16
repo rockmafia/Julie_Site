@@ -232,11 +232,14 @@ function App() {
           <h2 className="mb-8 lg:mb-16 font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white text-4xl uppercase">
             Portfolio
           </h2>
+          <div className="flex justify-center">
           <img
-            className="w-auto h-full "
+            className="lg:w-auto lg:h-full h-48"
             src={Present}
             alt="University Exeter"
           />
+          </div>
+         
          
         </div>
         /
