@@ -239,15 +239,20 @@ function App() {
             />
           </div>
 
-          <div className=" aspect-video ">
+          
+        </div>
+        <div className=" flex justify-center mb-8 ">
             <iframe
-              width="420"
-              height="345"
-              src="https://youtu.be/HW2FSh6rq4o"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/HW2FSh6rq4o?si=p0tyskZh0fWGMR_r&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              className="rounded-xl"
             ></iframe>
           </div>
-        </div>
-        /
+        
       </section>
 
       <section className="bg-white dark:bg-gray-900">
