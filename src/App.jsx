@@ -4,7 +4,6 @@ import Present from "./assets/Presentation.png";
 import { motion, useScroll } from "framer-motion";
 import "./index.css";
 
-
 function App() {
   const { scrollYProgress } = useScroll();
   const ref = useRef(null);
@@ -233,14 +232,25 @@ function App() {
             Portfolio
           </h2>
           <div className="flex justify-center">
-          <img
-            className="lg:w-auto lg:h-full h-48"
-            src={Present}
-            alt="University Exeter"
-          />
+            <img
+              className="lg:w-auto lg:h-full h-48"
+              src={Present}
+              alt="University Exeter"
+            />
+
+           
           </div>
-         
-         
+
+          <div className=" aspect-video ">
+              <iframe
+                className=" h-full w-full rounded-lg"
+                src="https://youtu.be/HW2FSh6rq4o"
+                width="100%"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
         </div>
         /
       </section>
@@ -348,10 +358,10 @@ function App() {
                       Phone Nummer
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
-                    deepti10misser@gmail.com
+                      deepti10misser@gmail.com
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
-                    +44 7414-186-009
+                      +44 7414-186-009
                     </p>
                   </div>
                 </div>
