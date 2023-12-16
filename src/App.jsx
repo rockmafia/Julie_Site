@@ -110,7 +110,7 @@ function App() {
               animate={{ x: 50, scale: 1.2 }}
               transition={{ delay: 1 }}
             >
-              <h1 className="max-w-2xl mb-2 text-4xl  tracking-tight leading-none md:text-5xl xl:text-7xl dark:text-white pb-8  font-bold ">
+              <h1 className="max-w-2xl mb-2 text-4xl  tracking-tight leading-none md:text-5xl xl:text-7xl dark:text-white pb-8  font-bold mt-6 ">
                 Deepti Misser
               </h1>
 
