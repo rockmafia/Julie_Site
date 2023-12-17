@@ -3,6 +3,7 @@ import Deepti from "./assets/DeeptiMisser.png";
 import Present from "./assets/Presentation.png";
 import { motion, useScroll } from "framer-motion";
 import "./index.css";
+import Whystady from './assets/Whystudydigitalmarketing.png'
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -32,9 +33,7 @@ function App() {
             href="#"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Julie Site
-            </span>
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
           </a>
           <button
             data-collapse-toggle="navbar-solid-bg"
@@ -185,9 +184,8 @@ function App() {
 
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-              About Me
+              PORTFOLIO
             </h1>
-
             <ol className="relative border-s border-gray-200 dark:border-gray-700">
               <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -204,7 +202,7 @@ function App() {
               <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  September 2014
+                  September 2015
                 </time>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   International College, Suan Sunandha Rajabhat University,
@@ -229,6 +227,46 @@ function App() {
             </ol>
           </div>
         </div>
+             
+        <div className="flex-row ml-20 mr-20 text-left pb-8">
+          <h1 className="fmb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
+            TRAINING EXPERIENCE 
+          </h1>
+          <p className="lead font-light text-gray-500 sm:text-xl dark:text-gray-400">
+            <li>
+            Stress and Depression During COVID-19 Pandemic Tips for Health Care Professional
+            </li>
+            <li>
+            Digital Marketing in Pharmaceutical Business
+            </li>
+            <li>Reshape to New Normal of Health Service Delivery in the COVID-19
+            </li>
+            <li>
+            ERA: Telepharmarcy Update EP1: No Pain You Gain
+            </li>
+            <li>
+            Improving Medication Compliance in MDD: Sertraline (ODT)
+            </li>
+            <li>
+            Guidelines for Drug Sales Advertisement Permission Request and Documents for Submission
+            </li>
+            <li>
+            Telepharmacy Update EP1: No Pain You Gain
+            </li>
+            <li>
+            Compliance with Global Trade Control Laws
+            </li>
+            <li>
+            Trainee student for one month, the Bureau of Tax Collection Standard and Development, Thailand
+            </li>
+            <li>
+            Trainee student for three months, Bangkok Airways Company, Thailand
+            </li>
+            <li>
+            Reserve Officer Training Cops Student (ROTCS), Thailand
+            </li>
+          </p>
+          </div>
       </section>
 
       <section className="bg-white dark:bg-gray-900">
@@ -237,7 +275,7 @@ function App() {
             className="mb-8 lg:mb-16 font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white text-4xl uppercase"
             ref={refportfolio}
           >
-            Portfolio
+            Personal projects ( digital marketing )
           </h2>
           <div className="flex justify-center">
             <img
@@ -258,6 +296,14 @@ function App() {
             className="rounded-lg "
           ></iframe>
         </div>
+
+        <div className="flex justify-center">
+            <img
+              className="lg:w-auto lg:h-full h-48"
+              src={Whystady}
+              alt="University Exeter"
+            />
+          </div>
       </section>
 
       <section className="bg-white dark:bg-gray-900">
@@ -333,9 +379,9 @@ function App() {
 
       <section className=" bg-Sepia" ref={ref}>
         <div className="mb-8 lg:mb-4 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl pt-10">
-          <h1 className="uppercase">Contact Us</h1>
+          <h1 className="uppercase">For more information Contact</h1>
         </div>
-        <div className="flex flex-wrap justify-center pt-10 ">
+        <div className="flex flex-wrap justify-center pt-4 ">
           <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 ">
             <div className="flex flex-wrap">
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6 ">
@@ -359,11 +405,9 @@ function App() {
                     </div>
                   </div>
                   <div className="ml-6 grow ">
-                    <p className="mb-2 font-bold text-white dark:text-white ">
-                      Phone Nummer
-                    </p>
+                    
                     <p className="text-neutral-500 dark:text-neutral-200">
-                      deepti10misser@gmail.com
+                      deepti19misser@gmail.com
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
                       +44 7414-186-009
